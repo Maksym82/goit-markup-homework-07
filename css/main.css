@@ -1,0 +1,58 @@
+:root {
+  --iris-primary-brand: #4D5AE5;
+  --ocean-pressed-state:#404BBF;
+  --navy-blue-dark: #2E2F42;
+  --green-success: #31D0AA;
+  --slate-text: #434455;
+  --light-slate-subtle-text: #8E8F99;
+  --cornflower-accent: #E7E9FC;
+  --cloud-light: #F4F4FD;
+  --navybluemodal-modaloverlay: #2E2F42;
+  --grey-hero-background: #2E2F42;
+  --white: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white-color);
+  color: var(--second-text-color);
+  letter-spacing: 0.03em;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */
