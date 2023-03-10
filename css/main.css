@@ -12,11 +12,11 @@
   --white: #FFFFFF;
 }
 
-.contacts-head {
+.nav, .contacts-head {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .contacts-head {
+  .nav, .contacts-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -126,4 +126,52 @@ ul {
   }
 }
 
-@impor;/*# sourceMappingURL=main.css.map */
+.nav {
+  padding-left: 0;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-left: 50px;
+  }
+  .nav__item:first-child {
+    margin-left: 0;
+  }
+}
+.nav__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-dark);
+}
+.nav__link:hover, .nav__link:focus {
+  color: var(--ocean-pressed-state);
+}
+.nav__link--current {
+  color: var(--ocean-pressed-state);
+}
+@media screen and (min-width: 768px) {
+  .nav__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    background: var(--ocean-pressed-state);
+    border-radius: 2px;
+  }
+}/*# sourceMappingURL=main.css.map */
