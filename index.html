@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+    <!--Хедер-->
     <header class="header">
         <div class="header__container">
             <a href="./index.html" class="logo"><span class="logo--accent">Web</span> Studio</a>
@@ -20,11 +21,76 @@
             </button>
             <nav>
                 <ul class="nav">
-                    <li class="nav__item"></li>
-                    <li class="nav__item"></li>
-                    <li class="nav__item"></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Studio</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
                 </ul>
             </nav>
+            <ul class="contacts-head">
+                <li class="contacts-head__item">
+                    <a href="mailto:info@devstudio.com" class="contacts-head__link">info@devstudio.com</a>
+                </li>
+                <li class="contacts-head__item">
+                    <a href="tel:+11(000)111-11-11" class="contacts-head__link">+11 (000) 111-11-11</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Мобильное меню -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu-toggle__icon" width="24" height="24" aria-label="Перемикач мобільного меню">
+                    <use class="menu-button__cross" href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                  <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Studio</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Contacts</a>
+                </li>
+            </ul>
+            <ul class="contacts-menu">
+                <li class="contacts-menu__item">
+                    <a href="tel:+11(000)111-11-11" class="contacts-menu__tel">+11 (000) 111-11-11</a>
+                </li>
+                <li class="contacts-menu">
+                    <a href="mailto:info@devstudio.com" class="contacts-menu__mail">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="social-menu">
+                <li class="social-menu__item">
+                    <a href="#" class="social-menu__link" >
+                        <svg width="40" height="40" class="social-menu__svg">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="#" class="social-menu__link" >
+                        <svg width="40" height="40" class="social-menu__svg">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item" >
+                    <a href="#" class="social-menu__link" >
+                        <svg width="40" height="40" class="social-menu__svg">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item" >
+                    <a href="#" class="social-menu__link" >
+                        <svg width="40" height="40" class="social-menu__svg">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 </body>
