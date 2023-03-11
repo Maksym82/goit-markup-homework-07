@@ -1,0 +1,26 @@
+.logo {
+    display: block;
+    font-family: Raleway;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--navy-blue-dark);
+    margin-right: 0;
+    text-transform: uppercase;
+
+    @media screen and(min-width: 768px) {
+        margin-right: 120px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-right: 76px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    &--accent {
+        color: var(--iris-primary-brand);
+    }
+}
