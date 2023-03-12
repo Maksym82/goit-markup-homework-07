@@ -67,7 +67,6 @@
         max-width: 360px;
         margin: 0 auto 72px;
         color: var(--white);
-        text-transform: uppercase;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -75,14 +74,17 @@
         text-align: center;
 
         @media screen and (min-width: 768px) {
+            max-width: 496px;
             font-size: 56px;
             line-height: 1.07;
         }
 
         @media screen and (min-width:1200px) {
             max-width: 496px;
+        
             font-size: 44px;
             line-height: 1.36;
+            
         }   
     }
 

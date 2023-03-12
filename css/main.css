@@ -463,7 +463,6 @@ ul {
   max-width: 360px;
   margin: 0 auto 72px;
   color: var(--white);
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -472,6 +471,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
   }
