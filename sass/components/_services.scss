@@ -1,0 +1,28 @@
+.services {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @extend %section;
+
+    &__title {
+        @extend %section-title;
+    }
+
+    &__list {
+        @extend %container;
+        @extend %list;
+    }
+
+    &__item {
+        margin-left: 24px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+}
