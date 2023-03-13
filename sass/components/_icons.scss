@@ -1,0 +1,32 @@
+.icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.icons__list {
+    margin-left: 24px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.icons__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: var(--cloud-light);
+    background-color: var(--iris-primary-brand);
+    border-radius: 50%;
+}
+
+.icons__svg {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    fill: currentColor;
+}
