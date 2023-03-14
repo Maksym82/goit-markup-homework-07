@@ -886,4 +886,29 @@ ul {
             justify-content: space-between;
     text-align: start;
   }
+}
+
+.address {
+  width: 268px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-right: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-right: 120px;
+  }
+}
+
+.page-footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud-light);
 }/*# sourceMappingURL=main.css.map */
