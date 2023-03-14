@@ -12,23 +12,23 @@
   --white: #FFFFFF;
 }
 
-.clients__list, .team__list, .services__list, .benefits__list, .header__container {
+.page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -266,6 +266,10 @@ ul {
 }
 .logo--accent {
   color: var(--iris-primary-brand);
+}
+.logo--footer {
+  color: var(--white);
+  margin-bottom: 16px;
 }
 
 .header {
@@ -844,4 +848,42 @@ ul {
 }
 .clients__icon {
   fill: currentColor;
+}
+
+.page-footer {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--navybluemodal-modaloverlay);
+}
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.page-footer__container {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.page-footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: var(--navybluemodal-modaloverlay);
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__container {
+        @extend %container;
+        text-align: center;
+        
+        @media screen and(min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: space-between;
+            text-align: start;
+        }
+    }
+}
