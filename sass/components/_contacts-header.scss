@@ -40,6 +40,14 @@
         color: var(--slate-text);
         letter-spacing: 0.02em;
         align-items: center;
+        transition-property:  color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--ocean-pressed-state);
+        }
     
       
 
