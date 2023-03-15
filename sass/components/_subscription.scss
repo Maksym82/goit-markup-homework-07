@@ -1,6 +1,10 @@
 .subscription {
     @media screen and (min-width: 768px) {
         width: 453px;
+        display: inline-block;
+        margin-left: 93px;
+       
+        
     }
 
     &__text {
@@ -16,6 +20,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row; 
+            margin-left: 0;
+        }
 
         @media screen and (min-width: 1200px) {
             flex-direction: row;
@@ -65,8 +74,14 @@
         letter-spacing: 0.04em;
         color: var(--white);
         cursor: pointer;
-    
-      
+        transition-property:  background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--ocean-pressed-state);
+        }
     }
 
     &__icon {
