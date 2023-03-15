@@ -119,6 +119,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .contacts-head {
@@ -131,6 +134,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -256,6 +262,9 @@ ul {
     margin-right: 76px;
     font-size: 18px;
     line-height: 1.33;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .logo--accent {
@@ -738,6 +747,9 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -755,6 +767,9 @@ ul {
   text-align: center;
   padding-bottom: 32px;
   margin-bottom: 72px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team__item:last-child {
   margin-bottom: 0;
@@ -905,6 +920,9 @@ ul {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -922,15 +940,16 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .address {
+    width: 264px;
     margin-right: 24px;
     margin-left: 93px;
   }
 }
 @media screen and (min-width: 1200px) {
   .address {
-    width: 264px;
+    max-width: 264px;
     margin-right: 120px;
-    margin-left: 93px;
+    margin-left: 53px;
   }
 }
 
@@ -941,6 +960,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--cloud-light);
   text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__text {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

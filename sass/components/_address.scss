@@ -8,14 +8,15 @@
     // align-items: start;
 
     @media screen and (min-width: 768px) {
+        width: 264px;
         margin-right: 24px;
         margin-left: 93px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 264px;
+        max-width: 264px;
         margin-right: 120px;
-        margin-left: 93px;
+        margin-left: 53px;
     }
 }
 
@@ -26,4 +27,8 @@
     letter-spacing: 0.02em;
     color: var(--cloud-light);
     text-align: left;
+
+    @media screen and (min-width: 1200px) {
+        width: 264px;
+    }
 }
