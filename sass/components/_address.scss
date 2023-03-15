@@ -1,8 +1,10 @@
 .address {
+    display: flex;
+    flex-direction: column;
     width: 268px;
-    text-align: center;
     margin: 0 auto;
     margin-bottom: 72px;
+    // align-items: start;
 
     @media screen and (min-width: 768px) {
         margin-right: 24px;
@@ -20,4 +22,5 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud-light);
+    text-align: left;
 }

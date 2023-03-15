@@ -271,6 +271,11 @@ ul {
   color: var(--white);
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .logo--footer {
+    text-align: start;
+  }
+}
 
 .header {
   position: fixed;
@@ -889,8 +894,14 @@ ul {
 }
 
 .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 268px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 72px;
 }
@@ -912,4 +923,5 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud-light);
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
