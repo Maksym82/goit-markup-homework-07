@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     list-style: none;
+
+    .join & {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 60px;
+    }
 }
 
 .icons__list {
@@ -22,6 +28,21 @@
     color: var(--cloud-light);
     background-color: var(--iris-primary-brand);
     border-radius: 50%;
+
+    .join & {
+        color: var(--cloud-light);
+        background-color: var(--slate-text);
+        border-radius: 50%;
+        transition-property:  color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover, 
+        &:focus {
+            background-color: var(--green-success);
+            color: var(--cloud-light);
+        }
+    }
 }
 
 .icons__svg {
