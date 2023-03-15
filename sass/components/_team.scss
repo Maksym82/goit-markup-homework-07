@@ -3,6 +3,7 @@
     background-color: var(--cloud-light);
     
     
+    
 
     &__title {
         @extend %section-title;
@@ -11,6 +12,8 @@
     &__list {
         @extend %container;
         @extend %list;
+        
+        
         
 
         @media screen and (min-width:768px) {
@@ -34,8 +37,8 @@
         border-radius: 0px 0px 4px 4px;
         text-align: center;
         padding-bottom: 32px;
-        margin-bottom: 72px;
-        justify-content: center;
+        // gap: 72px;
+        margin: 0 auto 72px;
         
 
         &:last-child {

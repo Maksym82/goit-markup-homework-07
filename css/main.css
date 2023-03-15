@@ -766,10 +766,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding-bottom: 32px;
-  margin-bottom: 72px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto 72px;
 }
 .team__item:last-child {
   margin-bottom: 0;
