@@ -273,6 +273,7 @@ ul {
 .logo--footer {
   color: var(--white);
   margin-bottom: 16px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .logo--footer {
@@ -892,6 +893,9 @@ ul {
     padding-bottom: 100px;
   }
 }
+.page-footer__container {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .page-footer__container {
     display: -webkit-box;
@@ -902,24 +906,14 @@ ul {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
   }
 }
 
@@ -984,6 +978,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .join__text {
@@ -1010,6 +1005,12 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .subscription__text {
+    text-align: start;
+  }
 }
 .subscription__form {
   display: -webkit-box;

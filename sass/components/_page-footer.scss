@@ -11,6 +11,7 @@
 
     &__container {
         @extend %container;
+        text-align: center;
        
         
         @media screen and(min-width: 768px) {
@@ -18,16 +19,13 @@
             flex-wrap: wrap;
             // justify-content: center;
             align-items: baseline;
-            text-align: left;
+            // text-align: left;
         }
 
         @media screen and (min-width: 1200px) {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            // text-align: start;
-            margin-left: 0;
-            justify-content: center;
+            // justify-content: space-between;
+            justify-content: space-between;
+            text-align: start;
         }
     }
 }

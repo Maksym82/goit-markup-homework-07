@@ -29,6 +29,7 @@
     &--footer {
         color: var(--white);
         margin-bottom: 16px;
+        text-align: center;
 
         @media screen and (min-width: 768px) {
             text-align: start;

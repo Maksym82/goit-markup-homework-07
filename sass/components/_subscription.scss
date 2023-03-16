@@ -16,6 +16,11 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--white);
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        } 
     }
 
     &__form {
