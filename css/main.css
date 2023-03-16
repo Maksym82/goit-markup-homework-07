@@ -914,6 +914,8 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -967,7 +969,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 94px;
+    margin-right: 80px;
     margin-left: 0;
   }
 }
