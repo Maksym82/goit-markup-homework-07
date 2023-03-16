@@ -32,9 +32,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1200px;
-    padding-left: 156px;
-    padding-right: 156px;
+    max-width: 1158px;
   }
 }
 
@@ -695,6 +693,9 @@ ul {
 }
 .icons__list:first-child {
   margin-left: 0;
+}
+.join .icons__list {
+  gap: 16px;
 }
 
 .icons__link {

@@ -16,6 +16,10 @@
     &:first-child {
         margin-left: 0;
     }
+
+    .join & {
+        gap: 16px;
+    }
 }
 
 .icons__link {
