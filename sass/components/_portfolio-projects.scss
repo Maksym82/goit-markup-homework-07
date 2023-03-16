@@ -60,12 +60,15 @@
         width: 100%;
         height: 100%;
         transform: translateY(100%);
-        transition: transform 250ms $transitionCubic;
+        // transition: transform 250ms $transitionCubic;
         padding: 40px 32px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         opacity: 0;
+        transition-property:  background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
         color: var(--cloud-light);
         background: var(--iris-primary-brand);
@@ -97,5 +100,23 @@
         border-left: 1px solid #E7E9FC;
         border-bottom: 1px solid #E7E9FC;
         padding: 32px 0;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--navybluemodal-modaloverlay);
+    }
+
+    &__text {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--slate-text);
     }
 }
