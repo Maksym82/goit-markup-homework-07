@@ -910,9 +910,6 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .page-footer__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     text-align: start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -942,7 +939,7 @@ ul {
   .address {
     max-width: 264px;
     margin-right: 120px;
-    margin-left: 53px;
+    margin-left: 23px;
   }
 }
 
@@ -1070,6 +1067,11 @@ ul {
     width: 264px;
     margin-right: 24px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    margin-right: 0;
   }
 }
 .subscription__button {
