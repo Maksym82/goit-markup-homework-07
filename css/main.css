@@ -1257,8 +1257,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   opacity: 0;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
