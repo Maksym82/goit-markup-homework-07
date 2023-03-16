@@ -17,8 +17,14 @@
         margin-left: 0;
     }
 
-    .join & {
-        gap: 16px;
+   
+}
+
+.icons__list-footer {
+    margin-left: 16px;
+
+    &:first-child {
+        margin-left: 0;
     }
 }
 

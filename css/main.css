@@ -694,8 +694,12 @@ ul {
 .icons__list:first-child {
   margin-left: 0;
 }
-.join .icons__list {
-  gap: 16px;
+
+.icons__list-footer {
+  margin-left: 16px;
+}
+.icons__list-footer:first-child {
+  margin-left: 0;
 }
 
 .icons__link {
