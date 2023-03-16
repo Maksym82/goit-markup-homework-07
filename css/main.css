@@ -12,27 +12,29 @@
   --white: #FFFFFF;
 }
 
-.page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
-  padding-left: 15px;
-  padding-right: 15px;
+.filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
+  .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
+    padding-left: 156px;
+    padding-right: 156px;
   }
 }
 
@@ -49,12 +51,12 @@
   }
 }
 
-.clients, .team, .services, .benefits {
+.projects-section, .clients, .team, .services, .benefits {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 @media screen and (min-width: 1200px) {
-  .clients, .team, .services, .benefits {
+  .projects-section, .clients, .team, .services, .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -1113,4 +1115,45 @@ ul {
   width: 24px;
   height: 20px;
   fill: var(--white);
+}
+
+.filter {
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 72px;
+  }
+}
+.filter__list {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.filter__item {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

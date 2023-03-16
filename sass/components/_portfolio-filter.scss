@@ -1,0 +1,40 @@
+.projects-section {
+    @extend %section;
+  }
+  
+  .filter {
+    @extend %container;
+    margin-bottom: 48px;
+  
+    @media screen and (min-width:768px) {
+      margin-bottom: 64px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 72px;
+    }
+
+    &__list {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        padding: 0;
+        list-style: none;
+        gap: 24px;
+    
+        @media screen and (min-width:768px) {
+            width: 100%;
+            // gap:8px;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        margin-bottom: 16px;
+    
+        @media screen and (min-width:768px) {
+            margin: 0;
+        }
+    }
+}
