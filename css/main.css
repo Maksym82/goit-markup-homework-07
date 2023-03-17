@@ -1433,7 +1433,7 @@ ul {
 }
 .form__input {
   height: 40px;
-  border: 1px solid #2E2F42;
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding-left: 34px;
   -webkit-transition-property: border-color;
@@ -1455,7 +1455,7 @@ ul {
   top: 50%;
   left: 16px;
   width: 18px;
-  height: 24px;
+  height: 18px;
 }
 .form__icon:focus {
   outline: none;
@@ -1581,13 +1581,8 @@ ul {
   border-radius: 2px;
   fill: var(--white);
 }
-@media screen and (min-width: 1200px) {
-  .checkbox__icon {
-    top: 4px;
-  }
-}
 .checkbox__input:checked ~ .checkbox__icon {
-  fill: var(--white-color);
+  fill: var(--white);
   background-color: var(--iris-primary-brand);
   border-color: var(--iris-primary-brand);
 }
