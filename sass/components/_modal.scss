@@ -38,14 +38,14 @@
 
     @media screen and (min-width:1200px) {
        
-        transform: translate(-50%, -50%) scale(1.1) ;
+        transform: translate(-50%, -50%) scale(1) ;
     }
 
     .backdrop--hidden & {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
+        transform: translate(-50%, -50%) scale(0.8) ;
     }
 }
 
@@ -68,12 +68,12 @@
         margin: auto;
         width: 8px;
         height: 8px;
-        right: 50%;
+        // right: 50%;
         align-items: center;
         cursor: pointer;
     
         .close:hover &,
-        .close:focus & {
+        .close:focus  & {
             fill: var(--white);
             background-color: var(--ocean-pressed-state);
         }
@@ -147,7 +147,17 @@
         .form__input:focus + & {
             fill: var(--iris-primary-brand);
         }
+
+        &:hover {
+            outline: none;
+            border: 1px solid var(--iris-primary-brand);
+        }
+
+        .form__input:hover + & {
+            fill: var(--iris-primary-brand);
+        }
     }
+    
 
     &__comment {
         display: flex;
@@ -160,7 +170,7 @@
         height: 120px;
         padding: 8px 16px;
         margin-bottom: 18px;
-        border: 1px solid #2E2F42;
+        border: 1px solid rgba(46, 47, 66, 0.2);
         border-radius: 4px;
         font-weight: 400;
         font-size: 12px;

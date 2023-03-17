@@ -1351,16 +1351,16 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    -webkit-transform: translate(-50%, -50%) scale(1.1);
-            transform: translate(-50%, -50%) scale(1.1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 .backdrop--hidden .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
-          transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
 }
 
 .close {
@@ -1387,7 +1387,6 @@ ul {
   margin: auto;
   width: 8px;
   height: 8px;
-  right: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1464,6 +1463,13 @@ ul {
 .form__input:focus + .form__icon {
   fill: var(--iris-primary-brand);
 }
+.form__icon:hover {
+  outline: none;
+  border: 1px solid var(--iris-primary-brand);
+}
+.form__input:hover + .form__icon {
+  fill: var(--iris-primary-brand);
+}
 .form__comment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,7 +1485,7 @@ ul {
   height: 120px;
   padding: 8px 16px;
   margin-bottom: 18px;
-  border: 1px solid #2E2F42;
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   font-weight: 400;
   font-size: 12px;
