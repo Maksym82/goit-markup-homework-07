@@ -1385,8 +1385,8 @@ ul {
 }
 .close__icon {
   margin: auto;
-  width: 8px;
-  height: 8px;
+  width: 18px;
+  height: 18px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1395,6 +1395,7 @@ ul {
 .close:hover .close__icon, .close:focus .close__icon {
   fill: var(--white);
   background-color: var(--ocean-pressed-state);
+  border-color: var(--ocean-pressed-state);
 }
 
 .form {
@@ -1443,6 +1444,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:hover {
+  border: 1px solid var(--iris-primary-brand);
   cursor: pointer;
 }
 .form__input:focus {
@@ -1456,18 +1458,11 @@ ul {
   width: 18px;
   height: 18px;
 }
-.form__icon:focus {
+.form__icon:focus, .form__icon:hover {
   outline: none;
   border: 1px solid var(--iris-primary-brand);
 }
-.form__input:focus + .form__icon {
-  fill: var(--iris-primary-brand);
-}
-.form__icon:hover {
-  outline: none;
-  border: 1px solid var(--iris-primary-brand);
-}
-.form__input:hover + .form__icon {
+.form__icon .form__input:focus, :hover + .form__icon {
   fill: var(--iris-primary-brand);
 }
 .form__comment {
@@ -1514,7 +1509,7 @@ ul {
 .form__textarea::placeholder {
   color: rgba(142, 143, 153, 0.5);
 }
-.form__textarea:focus {
+.form__textarea:focus, .form__textarea:hover {
   outline: none;
   border: 1px solid var(--iris-primary-brand);
 }

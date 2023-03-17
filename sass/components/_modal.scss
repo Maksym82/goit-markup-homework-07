@@ -63,11 +63,12 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    
+   
     &__icon {
         margin: auto;
-        width: 8px;
-        height: 8px;
+        width: 18px;
+        height: 18px;
         // right: 50%;
         align-items: center;
         cursor: pointer;
@@ -76,6 +77,7 @@
         .close:focus  & {
             fill: var(--white);
             background-color: var(--ocean-pressed-state);
+            border-color: var(--ocean-pressed-state) ;
         }
     }
 }
@@ -122,7 +124,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            // border: 1px solid var( --accent-color);
+            border: 1px solid var(--iris-primary-brand);
             cursor: pointer;
         }
 
@@ -139,23 +141,24 @@
         width: 18px;
         height: 18px;
 
-        &:focus {
+        &:focus,
+        &:hover  {
             outline: none;
             border: 1px solid var(--iris-primary-brand);
         }
 
-        .form__input:focus + & {
+        .form__input:focus,:hover + & {
             fill: var(--iris-primary-brand);
         }
 
-        &:hover {
-            outline: none;
-            border: 1px solid var(--iris-primary-brand);
-        }
+        // &:hover {
+        //     outline: none;
+        //     border: 1px solid var(--iris-primary-brand);
+        // }
 
-        .form__input:hover + & {
-            fill: var(--iris-primary-brand);
-        }
+        // .form__input:hover + & {
+        //     fill: var(--iris-primary-brand);
+        // }
     }
     
 
@@ -185,7 +188,8 @@
             color: rgba(142, 143, 153, 0.5);
         }
 
-        &:focus {
+        &:focus,
+        &:hover {
             outline: none;
             border: 1px solid var(--iris-primary-brand);
         }
