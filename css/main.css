@@ -39,7 +39,7 @@
 .clients__list, .team__list, .services__list, .benefits__list, .contacts-menu, .nav, .contacts-head {
   list-style: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .clients__list, .team__list, .services__list, .benefits__list, .contacts-menu, .nav, .contacts-head {
     display: -webkit-box;
     display: -ms-flexbox;
