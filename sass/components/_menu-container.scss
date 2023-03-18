@@ -12,8 +12,8 @@
 }
 
 .menu-toggle {
-    min-height: 22px;
-    min-width: 32px;
+    min-height: 24px;
+    min-width: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,9 +21,15 @@
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-    border: none;
+    border: 1px solid #E7E9FC;
     border-radius: 50%;
     outline: none;
+
+    &:hover,
+    &:focus {
+        background-color: var(--ocean-pressed-state);
+        border-color: transparent ;
+    }
 
     &__icon {
         fill: currentColor;
