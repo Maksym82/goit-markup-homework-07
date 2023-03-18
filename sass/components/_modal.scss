@@ -63,6 +63,12 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--ocean-pressed-state);
+        border-color: transparent ;
+    }
     
    
     &__icon {
@@ -76,8 +82,6 @@
         .close:hover &,
         .close:focus  & {
             fill: var(--white);
-            background-color: var(--ocean-pressed-state);
-            border-color: var(--ocean-pressed-state) ;
         }
     }
 }
@@ -147,7 +151,7 @@
             border: 1px solid var(--iris-primary-brand);
         }
 
-        .form__input:focus,:hover + & {
+        .form__input:focus + & {
             fill: var(--iris-primary-brand);
         }
 
