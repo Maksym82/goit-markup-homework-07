@@ -361,10 +361,6 @@ ul {
   border-radius: 50%;
   outline: none;
 }
-.menu-toggle:hover, .menu-toggle:focus {
-  background-color: var(--ocean-pressed-state);
-  border-color: transparent;
-}
 .menu-toggle__icon {
   fill: currentColor;
 }
@@ -426,6 +422,17 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 459px) {
+  .mobile-menu__link {
+    font-size: 32px;
+  }
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--iris-primary-brand);
+}
+.mobile-menu__link--current {
+  color: var(--iris-primary-brand);
+}
 
 .contacts-menu {
   margin-bottom: 32px;
@@ -461,6 +468,22 @@ ul {
 }
 .social-menu__item:last-child {
   margin-right: none;
+}
+.social-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 90, 229, 0.1);
+  border-radius: 50%;
 }
 .social-menu__svg {
   fill: var(--cloud-light);
@@ -1381,8 +1404,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition-property: fill;
-  transition-property: fill;
+  -webkit-transition-property: fill, background-color;
+  transition-property: fill, background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

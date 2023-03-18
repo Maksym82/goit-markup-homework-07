@@ -25,14 +25,12 @@
     border-radius: 50%;
     outline: none;
 
-    &:hover,
-    &:focus {
-        background-color: var(--ocean-pressed-state);
-        border-color: transparent ;
-    }
+  
 
     &__icon {
         fill: currentColor;
+
+       
     }
 
     .menu-container & {
@@ -89,6 +87,19 @@
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        
+        @media screen and (max-width: 459px) {
+            font-size: 32px;
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--iris-primary-brand);
+        }
+
+        &--current {
+            color: var(--iris-primary-brand);
+        }
     }
 }
 
@@ -129,6 +140,21 @@
         &:last-child {
             margin-right: none;
         }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        // color: var(--cloud-light);
+        background-color: rgba(77, 90, 229, 0.1);
+        border-radius: 50%;
+
+       
+        
     }
     
     &__svg {

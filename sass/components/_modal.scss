@@ -60,7 +60,7 @@
     border: 1px solid #E7E9FC;
     border-radius: 50%;
     display: flex;
-    transition-property: fill;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
