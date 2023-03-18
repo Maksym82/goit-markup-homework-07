@@ -37,7 +37,7 @@
         border-radius: 0px 0px 4px 4px;
         text-align: center;
         padding-bottom: 32px;
-        // gap: 72px;
+        gap: 24px;
         margin: 0 auto 72px;
         
 
@@ -48,6 +48,7 @@
         @media screen and (min-width: 768px) {
             width: 264px;
             margin-bottom: 0;
+            // width: calc(100% - );
             
         }
 

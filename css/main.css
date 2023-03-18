@@ -27,7 +27,7 @@
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
   .projects, .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -779,6 +779,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding-bottom: 32px;
+  gap: 24px;
   margin: 0 auto 72px;
 }
 .team__item:last-child {
