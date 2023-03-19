@@ -3,7 +3,7 @@
     background-color: var(--cloud-light);
     
     
-    
+   
 
     &__title {
         @extend %section-title;
@@ -12,6 +12,9 @@
     &__list {
         @extend %container;
         @extend %list;
+
+        
+        
         
         
         
@@ -19,7 +22,7 @@
         @media screen and (min-width:768px) {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            gap:  24px;
             justify-content: center;
         }
 
@@ -39,17 +42,21 @@
         padding-bottom: 32px;
         gap: 24px;
         margin: 0 auto 72px;
+     
+       
+           
         
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+       
+        
+        
+       
 
         @media screen and (min-width: 768px) {
             width: 264px;
             margin-bottom: 0;
-            // width: calc(100% - );
             
+            // width: calc();
         }
 
     }
