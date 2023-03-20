@@ -1,8 +1,12 @@
 .benefits {
     @extend %section;
-
+   
     @media screen and(min-width:1200px) {
         padding-bottom: 0;  
+    }
+
+    .benefits-container {
+        @extend %container;
     }
 
     &__list {
