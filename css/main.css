@@ -776,7 +776,10 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 24px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    row-gap: 64px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -797,7 +800,6 @@ ul {
   text-align: center;
   padding-bottom: 32px;
   gap: 24px;
-  margin: 0 auto 72px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
