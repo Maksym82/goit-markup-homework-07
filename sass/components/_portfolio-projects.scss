@@ -4,19 +4,17 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
         padding-left: 0;
         margin-top: 0;
         margin-bottom: 0;
         list-style: none;
         gap:24px;
-        // margin: -15px;
     }
 
     &__item {
             width: 100%;
          
-         @media screen and(min-width: 768px) {
+         @media screen and (min-width: 768px) {
             width: 356px;
          }
  
@@ -66,21 +64,11 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         opacity: 0;
-        // transition-property:  background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
         color: var(--cloud-light);
         background: var(--iris-primary-brand);
-
-        // @media screen and (max-width: 479px) {
-        //     padding: 24px;
-        //     font-size: 16px;
-        // }
-
-        // @media screen and (min-width: 768px) {
-        //     padding-top: 48px;
-        // }
 
         @media screen and (min-width: 1200px) {
             padding: 40px 32px;
