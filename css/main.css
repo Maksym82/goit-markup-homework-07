@@ -29,7 +29,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1158px;
+    max-width: 1200px;
   }
 }
 
@@ -622,7 +622,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    width: 264px;
+    width: 265px;
   }
 }
 .benefits__icons-container {
