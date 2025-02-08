@@ -26,9 +26,6 @@
 }
 @media screen and (min-width: 1200px) {
   .projects, .filter, .page-footer__container, .clients__list, .team__list, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     max-width: 1200px;
   }
 }
