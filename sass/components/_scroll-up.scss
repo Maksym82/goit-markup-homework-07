@@ -1,0 +1,26 @@
+#scrollToTop {
+  position: fixed;
+  bottom: 2px;
+  left: 73%;
+  display: none;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 15;
+
+  @media (min-width: 630px) {
+    left: 70%;
+  }
+  @media (min-width: 680px) {
+    left: 68%;
+  }
+  @media (min-width: 768px) {
+    left: 80%;
+  }
+  @media (min-width: 1200px) {
+    left: 90%;
+  }
+}
+
+.scroll-up {
+  fill: var(--iris-primary-brand);
+}
