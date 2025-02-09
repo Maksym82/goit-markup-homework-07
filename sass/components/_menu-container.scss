@@ -33,7 +33,6 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
-
 }
 
 .menu-container {
@@ -124,13 +123,10 @@
 .social-menu {
     display: flex;
     list-style: none;
+    gap: 26px;
 
-    &__item {
-        margin-right: 56px;
-
-        &:last-child {
-            margin-right: none;
-        }
+    @media (min-width: 428px) {
+        gap: 56px;
     }
 
     &__link {
@@ -140,7 +136,7 @@
         text-decoration: none;
         width: 40px;
         height: 40px;
-        background-color: rgba(77, 90, 229, 0.1);
+        background-color: rgba(77, 90, 229, 0.5);
         border-radius: 50%;
     }
     

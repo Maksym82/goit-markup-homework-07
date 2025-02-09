@@ -56,6 +56,12 @@
         outline: none;
         padding-left: 16px;
         padding-right: 16px;
+        transition: border 0.25s linear;
+
+        &:hover,
+        &:focus {
+            border: 1px solid var(--iris-primary-brand) ;
+        }
 
         @media screen and (min-width: 768px) {
             width: 264px;
@@ -102,6 +108,4 @@
         height: 20px;
         fill: var(--white);
     }
-
-
 }
