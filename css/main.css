@@ -970,6 +970,7 @@ ul {
     width: 264px;
     margin-right: 24px;
     margin-left: 93px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1627,7 +1628,7 @@ ul {
 
 #scrollToTop {
   position: fixed;
-  bottom: 2px;
+  bottom: 6px;
   left: 73%;
   display: none;
   cursor: pointer;
