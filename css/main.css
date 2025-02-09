@@ -740,6 +740,11 @@ ul {
   color: var(--cloud-light);
   background-color: var(--iris-primary-brand);
   border-radius: 50%;
+  -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icons__link:hover, .icons__link:focus {
+  background-color: var(--ocean-pressed-state);
 }
 .join .icons__link {
   color: var(--cloud-light);
@@ -942,6 +947,9 @@ ul {
     text-align: start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
