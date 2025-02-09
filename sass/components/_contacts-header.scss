@@ -32,8 +32,6 @@
         }
     }
 
-   
-
     &__link {
         font-weight: 400;
         font-size: 16px;
@@ -50,8 +48,6 @@
         &:focus {
             color: var(--ocean-pressed-state);
         }
-    
-      
 
         @media screen and (min-width: 1200px) {
             display: flex;

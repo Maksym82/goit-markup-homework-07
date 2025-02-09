@@ -75,7 +75,6 @@
         margin: auto;
         width: 18px;
         height: 18px;
-        // right: 50%;
         align-items: center;
         cursor: pointer;
     
@@ -154,15 +153,6 @@
         .form__input:focus + & {
             fill: var(--iris-primary-brand);
         }
-
-        // &:hover {
-        //     outline: none;
-        //     border: 1px solid var(--iris-primary-brand);
-        // }
-
-        // .form__input:hover + & {
-        //     fill: var(--iris-primary-brand);
-        // }
     }
     
 
