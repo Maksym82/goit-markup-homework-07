@@ -2,7 +2,9 @@
     @extend %section;
     background-color: var(--cloud-light);
     
-    
+    .team-container {
+        @extend %container;
+    }
    
 
     &__title {

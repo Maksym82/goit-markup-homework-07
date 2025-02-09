@@ -12,7 +12,7 @@
   --white: #FFFFFF;
 }
 
-.projects, .filter, .page-footer__container, .clients__list, .team__list, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
+.projects, .filter, .page-footer__container, .clients__list, .team__list, .team .team-container, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
   max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
@@ -20,12 +20,12 @@
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  .projects, .filter, .page-footer__container, .clients__list, .team__list, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
+  .projects, .filter, .page-footer__container, .clients__list, .team__list, .team .team-container, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .projects, .filter, .page-footer__container, .clients__list, .team__list, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
+  .projects, .filter, .page-footer__container, .clients__list, .team__list, .team .team-container, .services-container, .services__list, .benefits__list, .benefits .benefits-container, .header__container {
     max-width: 1200px;
   }
 }
@@ -353,8 +353,8 @@ ul {
 }
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 20px;
+  right: 20px;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
